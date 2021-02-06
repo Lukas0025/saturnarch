@@ -1,0 +1,85 @@
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+## core
+base
+cloud-init
+linux
+mkinitcpio
+mkinitcpio-archiso
+openssh
+syslinux
+
+## Xorg Packages
+xorg-server
+xorg-xbacklight
+xorg-fonts-misc
+xorg-xfd
+xorg-xkill
+xorg-xrandr
+xorg-xrdb
+xorg-xset
+
+## Touchpad and Mouse
+xorg-xinput
+xf86-input-libinput
+
+## GPU Drivers (Intel/AMD/Nvidia)
+xf86-video-fbdev
+xf86-video-vesa
+xf86-video-intel
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-nouveau
+nvidia
+
+## Networking
+networkmanager
+nm-connection-editor
+networkmanager-openvpn
+
+# audio
+alsa-plugins
+alsa-tools
+alsa-utils
+pulseaudio
+pulseaudio-alsa
+pulseaudio-equalizer-ladspa
+pavucontrol
+
+## Desktop
+exo
+garcon
+thunar
+thunar-volman
+tumbler
+xfce4-appfinder
+xfce4-panel
+xfce4-power-manager
+xfce4-session
+xfce4-settings
+xfce4-terminal
+xfconf
+xfdesktop
+xfwm4
+xfwm4-themes
+xfce4-notifyd
+
+arc-gtk-theme
+arc-icon-theme
+
+network-manager-applet
+hicolor-icon-theme
+gnome-icon-theme
+
+xfce4-pulseaudio-plugin
+
+## tools
+gparted
+chromium
+vlc
+gthumb
+sudo
+
+#install tools
+arch-install-scripts

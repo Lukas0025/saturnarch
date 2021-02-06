@@ -1,0 +1,5 @@
+NAME="SaturnArch"
+ID=arch
+PRETTY_NAME="SaturnArch"
+ANSI_COLOR="0;32"
+HOME_URL="https://lukas.plevac.eu/saturnarch"
