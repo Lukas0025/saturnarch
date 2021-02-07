@@ -112,9 +112,9 @@ rm -f /packages.x86_64
 #user create
 useradd -m -G sudo "$username"
 cp -r /etc/skel/* "/home/$username"
-echo -e "$userpass" | passwd "$username"
 
-echo -e "$rootpass" | passwd root
+echo "$username:$userpass" | chpasswd
+echo "root:$rootpass" | chpasswd
 
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
