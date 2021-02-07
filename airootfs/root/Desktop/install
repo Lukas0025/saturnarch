@@ -110,8 +110,7 @@ sed -r '/^#/d' /packages.x86_64 | pacman --noconfirm -S -
 rm -f /packages.x86_64
 
 #user create
-useradd -m -G sudo "$username"
-cp -r /etc/skel/* "/home/$username"
+useradd -m -G root "$username"
 
 echo "$username:$userpass" | chpasswd
 echo "root:$rootpass" | chpasswd
