@@ -69,7 +69,7 @@ pacman-key --init && pacman-key --populate
 pacman-key --refresh-keys
 
 mount /dev/$disk /mnt
-pacstrap /mnt base linux linux-firmware
+pacstrap /mnt base linux linux-firmware vim nano
 
 #copy install data
 cp -r /to_install/* /mnt/
@@ -98,7 +98,7 @@ echo "127.0.0.1	localhost" > /etc/hosts
 echo "::1		localhost" >> /etc/hosts
 echo "127.0.1.1	$hostname.localdomain	$hostname" >> /etc/hosts
 
-mkinitcpio -P
+#mkinitcpio -P
 
 #install from lists
 gpg --refresh-keys
@@ -115,6 +115,10 @@ cp -r /etc/skel/* "/home/$username"
 echo -e "$userpass" | passwd "$username"
 
 echo -e "$rootpass" | passwd root
+
+systemctl enable gdm.service
+systemctl enable NetworkManager.service
+systemctl --user enable pulseaudio.service
 
 #install grub
 pacman --noconfirm -S grub
