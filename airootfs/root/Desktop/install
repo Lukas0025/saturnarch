@@ -77,6 +77,8 @@ cp -r /to_install/* /mnt/
 #remove autologin
 rm -rf /mnt/etc/systemd/system/getty@tty1.service.d/
 
+rm -f /mnt/do_not_edit
+
 genfstab -U /mnt >> /mnt/etc/fstab
 
 ##
@@ -110,8 +112,8 @@ sed -r '/^#/d' /packages.x86_64 | pacman --noconfirm -S -
 rm -f /packages.x86_64
 
 #user create
+groupadd sudo
 useradd -m -G sudo "$username"
-cp -r /etc/skel/* "/home/$username"
 
 echo "$username:$userpass" | chpasswd
 echo "root:$rootpass" | chpasswd

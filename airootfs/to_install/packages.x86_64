@@ -34,13 +34,11 @@ ipw2200-fw
 irssi
 iwd
 jfsutils
-lftp
 linux
 linux-atm
 linux-firmware
 lsscsi
 lvm2
-lynx
 man-db
 man-pages
 mdadm
@@ -165,6 +163,7 @@ sudo
 git
 autoconf
 automake
+make
 binutils
 ffmpeg
 ffmpegthumbnailer
@@ -175,13 +174,11 @@ htop
 imagemagick
 p7zip
 patch
-pcmanfm
 pkg-config
 scrot
 ttf-dejavu
 unrar
 unzip
-vim
 nano
 wget
 xarchiver

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+      echo
+      echo "No Docker Image supplied. Using archlinux"
+      echo
+      image='archlinux'
+else
+      image=$1
+fi
+
+docker run -it -v "$(pwd):/mnt" -w '/mnt' $image

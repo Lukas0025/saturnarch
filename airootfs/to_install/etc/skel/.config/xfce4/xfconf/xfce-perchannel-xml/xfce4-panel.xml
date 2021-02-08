@@ -18,6 +18,7 @@
         <value type="int" value="3"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
+        <value type="int" value="7"/>
         <value type="int" value="6"/>
         <value type="int" value="9"/>
         <value type="int" value="11"/>
@@ -60,7 +61,9 @@
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu"/>
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="button-icon" type="string" value="/usr/share/pixmaps/archlinux-logo.svg"/>
+    </property>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
     </property>
@@ -74,6 +77,9 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
+      </property>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
@@ -114,6 +120,9 @@
     <property name="plugin-21" type="string" value="separator"/>
     <property name="plugin-22" type="string" value="directorymenu">
       <property name="base-directory" type="string" value="/root"/>
+    </property>
+    <property name="plugin-7" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
   </property>
 </channel>
