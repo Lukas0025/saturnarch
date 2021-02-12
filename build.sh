@@ -12,6 +12,8 @@ cp airootfs/etc/os-release airootfs/to_install/etc
 cp airootfs/etc/bash.bashrc airootfs/to_install/etc
 cp -r airootfs/etc/pacman.d airootfs/to_install/etc
 
+cp airootfs/etc/sudoers airootfs/to_install/etc
+
 cp -r airootfs/usr/backgrounds airootfs/to_install/usr
 cp -r airootfs/usr/saturnarch airootfs/to_install/usr
 
