@@ -15,5 +15,6 @@ file_permissions=(
   ["/etc/shadow"]="0:0:400"
   ["/usr/local/bin/apt"]="1:1:1"
   ["/usr/local/bin/emuhere"]="1:1:1"
-  ["/root/Desktop/install"]="1:1:1"
+  ["/root/Desktop/install.desktop"]="1:1:1"
+  ["/root/install"]="1:1:1"
 )

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=install
+Comment=start install of system
+Exec=xfce4-terminal --maximize --execute /root/install
+Icon=/usr/saturnarch/logo.png
+Terminal=False
