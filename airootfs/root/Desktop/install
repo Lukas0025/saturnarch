@@ -60,7 +60,6 @@ exec 3>&-;
 ##
 
 echo "starting install"
-timedatectl set-ntp true
 
 #update keys
 echo "update keys"
@@ -88,8 +87,10 @@ echo "arch-choot"
 arch-chroot /mnt <<EOF
 
 echo "set time zone"
-timedatectl set-timezone $timezone
 hwclock --systohc --utc
+timedatectl set-timezone $timezone
+timedatectl set-ntp true
+
 locale-gen
 
 echo "set host name"
@@ -110,6 +111,9 @@ pacman -Syy
 
 sed -r '/^#/d' /packages.x86_64 | pacman --noconfirm -S -
 rm -f /packages.x86_64
+
+#chmod +x all local/bin
+chmod +x /usr/local/bin/*
 
 #user create
 groupadd sudo
