@@ -1,4 +1,4 @@
-# saturnarch
+# SaturnArch
 Small linux system base on arch linux. Build to be minimalist but usable in GUI.
 
 ![ScreenShot](https://raw.github.com/lukas0025/saturnarch/master/screens/black.png)
